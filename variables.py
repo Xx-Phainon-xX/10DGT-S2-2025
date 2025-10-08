@@ -30,4 +30,11 @@ sum_string2="5"
 print(sum_string1+sum_string2)
 # Turning these into strings combine the two numbers to make 185 rather than giving you the sum
 
+#Printing, formatting, f stands for 'format' and insert value of variables into curly brackets
 print(f'My calculation for {num_1} and {num_2} is {sum1}')
+print(f'my calculations for adding {} and {} together is {}'.format(num_1,num_2))
+
+#Greet someone
+print("Kia ora, my name is", name)
+print(f"Kia ora, my name is {name}." )
+print("Kia ora, my name is {}." format(name))
