@@ -36,29 +36,32 @@ while keep_going =="":
         
 
 
- #Version 3.0
+ #Version 3.1
  #Making program more pythonic
-keep_going=""
-while keep_going== "":
-    #convert answer to lower cause using .lower()
-    like_coffee= input("Do you like coffee? \n").lower()
-    if like_coffee== "yes" or like_coffee== "y":
-        print("That's great! I like coffee too")
+def coffee_program ():
+     keep_going = ""
+     while keep_going == "":
+        #convert answer to lower cause using .lower()
+        like_coffee = input("Do you like coffee? \n").lower()
+        if like_coffee == "yes" or like_coffee== "y":
+            print("That's great! I like coffee too")
+            
+        elif like_coffee == "no" or like_coffee == "n":
+            print("You are missing out! Why not give it a try?")
+
+            like_tea= input("Do you like tea instead?\n").upper()
+            if like_tea == "YES" or like_tea == "Y":
+                print("Good for you, you should also give coffee a try")
         
-    elif like_coffee== "no" or like_coffee== "n":
-        print("You are missing out! Why not give it a try?")
+            elif like_tea == "NO" or like_tea == "N":
+                print("I am sorry. That is all I have for you")
 
-        like_tea= input("Do you like tea instead?\n").upper()
-        if like_tea == "YES" or like_tea == "Y":
-         print("Good for you, you should also give coffee a try")
-    
-        elif like_tea == "NO" or like_tea == "N":
-            print("I am sorry. That is all I have for you")
+            else:
+                print("I don't understand. Please answer with either yes or no")
+            
+        else: #error message
+            print("I don't understand")
 
-        else:
-         print("I don't understand. Please answer with either yes or no")
-        
-    else: #error message
-         print("I don't understand")
+        keep_going = input ("Press <return> to continue, or any other kep to quit. Thanks!")`
 
-    keep_going = input ("Press <return> to continue, or any other kep to quit. Thanks!")
+if __name__== "__main__"
