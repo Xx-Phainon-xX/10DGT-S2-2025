@@ -18,21 +18,27 @@ def num_check(question):
                 print(error)
        except: ValueError
        (print(error))
-           
-    
+    return response
+
+print("Welcome to my area and perimeter calculator")
+name=input("What is your name? ")
 
 # Main Routine starts here
 keep_going = ""
 while keep_going == "" :
 
-    #Get width and length
-    for item in range (0,100000000):
-        width = num_check("width:")
-        print(width)
+      #get width and height
+  width= num_check(f"{name}, please enter the width of the shape:")
+  height=num_check(f"{name}, please enter the height of the shape:")
 
-        print ()
+#Calculate the area/ perimeter
+  area = width * height
+  perimeter = 2 * (width + height)
 
-    for item in range (0,100000000):
-        height = num_check("height:")
-        print(height)
-        
+#Output the area and perimeter
+  print()
+  print(f" The perimeter of your shape is: {perimeter} square units")
+  print(f" The area of your shape is: {area} square units")
+  keep_going=(input("Please press enter if you wish to continue or any key to quit"))
+
+      
