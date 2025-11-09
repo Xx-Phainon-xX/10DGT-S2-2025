@@ -22,9 +22,9 @@ name=input("Welcome to my fence cost calculator, what is your name? ")
 keep_going= ""
 while keep_going == "":
   #Get width 
-  width= (num_check(f"{name}, please enter your width in metres "))
-  length= (num_check(f"{name}, please enter your length in metres "))
-  cost= (num_check(f"{name}, please enter the cost per metres "))
+  width= (num_check(f"{name}, please enter your shape's width in metres "))
+  length= (num_check(f"{name}, please enter your shapes's length in metres "))
+  cost= (num_check(f"{name}, please enter the cost of the shape per metres "))
 
   #calculate cost
   perimeter = 2 * (width + length)
